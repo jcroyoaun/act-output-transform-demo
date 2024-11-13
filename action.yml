@@ -26,5 +26,5 @@ outputs:
     description: 'Timestamp when transformation occurred (if enabled)'
 
 runs:
-  using: 'node20'
+  using: 'node16'
   main: 'dist/index.js'
