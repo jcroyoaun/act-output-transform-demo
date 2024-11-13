@@ -1,0 +1,30 @@
+name: 'Text Transformer Action'
+description: 'Takes text input and outputs various transformations (uppercase, lowercase, slug, etc)'
+author: 'Your Fucking Awesome Self'
+
+inputs:
+  text:
+    description: 'The text to transform'
+    required: true
+  add-timestamp:
+    description: 'Whether to add timestamp to outputs'
+    required: false
+    default: 'false'
+
+outputs:
+  uppercase:
+    description: 'The text in UPPERCASE'
+  lowercase:
+    description: 'The text in lowercase'
+  slug:
+    description: 'The text as a url-friendly slug'
+  reversed:
+    description: 'The text reversed'
+  char-count:
+    description: 'Number of characters in text'
+  timestamp:
+    description: 'Timestamp when transformation occurred (if enabled)'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
